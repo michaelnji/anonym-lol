@@ -19,9 +19,10 @@ export interface Message {
 }
 
 export interface ClientResponse {
-    message: string | null,
-    error: string | null,
-    data: Profile | Message | Message[] | Picture | Picture[] | null | undefined,
-    status: number,
-    ok: boolean
+	message: string | null;
+	error: string | null;
+	data: Profile | Message | Message[] | Picture | Picture[] | null | undefined;
+	status: number;
+	ok: boolean;
 }
+export type Collections = "profiles" | "messages";

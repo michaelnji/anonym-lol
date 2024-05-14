@@ -1,0 +1,17 @@
+[data-theme='light'] {
+    --tertiary: var(--tertiary-600);
+    --bg: var(--base-50);
+    --text: var(--text-950);
+    --primary: var(--primary-500);
+    --accent: var(--accent-400);
+    --secondary: var(--secondary-400);
+}
+
+[data-theme='dark'] {
+    --tertiary: var(--tertiary-600);
+    --bg: var(--text-950);
+    --text: var(--text-50);
+    --primary: var(--primary-500);
+    --accent: var(--accent-400);
+    --secondary: var(--secondary-400);
+}

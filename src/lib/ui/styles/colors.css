@@ -1,0 +1,80 @@
+:root {
+    /* tertary color: paarl */
+    --tertiary-50: #fbf7efff;
+    --tertiary-100: #f4e6d1ff;
+    --tertiary-200: #e8ca9fff;
+    --tertiary-300: #dcac6dff;
+    --tertiary-400: #d4924bff;
+    --tertiary-500: #ca7536ff;
+    --tertiary-600: #a8542aff;
+    --tertiary-700: #954128ff;
+    --tertiary-800: #7a3526ff;
+    --tertiary-900: #652c22ff;
+    --tertiary-950: #39160fff;
+
+    /* base color: white */
+    --base-0: #ffffffff;
+    --base-50: #fefefeff;
+    --base-100: #efefefff;
+    --base-200: #dcdcdcff;
+    --base-300: #bdbdbdff;
+
+    /* primary color: fruit-salad */
+    --primary-50: #f2fbf3ff;
+    --primary-100: #e1f7e4ff;
+    --primary-200: #c5edcbff;
+    --primary-300: #98dda3ff;
+    --primary-400: #63c573ff;
+    --primary-500: #389b48ff;
+    --primary-600: #2e8b3dff;
+    --primary-700: #276e33ff;
+    --primary-800: #23582cff;
+    --primary-900: #1f4827ff;
+    --primary-950: #0c2711ff;
+
+    /* accent color: carnation */
+    --accent-50: #fef2f2ff;
+    --accent-100: #ffe1e1ff;
+    --accent-200: #ffc8c8ff;
+    --accent-300: #ffa2a2ff;
+    --accent-400: #fc7272ff;
+    --accent-500: #f43f3fff;
+    --accent-600: #e12121ff;
+    --accent-700: #be1717ff;
+    --accent-800: #9d1717ff;
+    --accent-900: #821a1aff;
+    --accent-950: #470808ff;
+
+    /* secondary color: lightning-yellow */
+
+    --secondary-50: #fffbebff;
+    --secondary-100: #fff5c6ff;
+    --secondary-200: #ffe988ff;
+    --secondary-300: #ffd84aff;
+    --secondary-400: #ffc41fff;
+    --secondary-500: #f9a307ff;
+    --secondary-600: #dd7a02ff;
+    --secondary-700: #b75606ff;
+    --secondary-800: #94410cff;
+    --secondary-900: #7a360dff;
+    --secondary-950: #461b02ff;
+
+    /* text color: marshland */
+    --text-50: #f5f8f6ff;
+    --text-100: #e0e7e5ff;
+    --text-200: #c0cfc9ff;
+    --text-300: #99afa8ff;
+    --text-400: #738e86ff;
+    --text-500: #59736bff;
+    --text-600: #465b55ff;
+    --text-700: #3a4b46ff;
+    --text-800: #313e3bff;
+    --text-900: #2c3533ff;
+    --text-950: #101514ff;
+
+
+
+
+
+
+}

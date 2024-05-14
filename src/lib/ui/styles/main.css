@@ -1,0 +1,8 @@
+@import '@fontsource/fira-mono';
+@import url('./colors.css');
+@import url('./config.css');
+@import url('./theme.css');
+@import url('./animations.css');
+@import url('./typography.css');
+@import url('./utils.css');
+@import url('./base.css');

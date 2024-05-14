@@ -1,0 +1,30 @@
+:root {
+    /* typography */
+    --family-logo: Telma, 'Segoe UI', cursive, Tahoma, system-ui;
+    --family-head: Melodrama, Georgia, 'Times New Roman', system-ui, serif;
+    --family-body: Plein, Arial, system-ui, sans-serif;
+    --font-size: 1rem;
+
+    /* transtions */
+    --duration: 0.3s;
+    --easing: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+
+    /* misc */
+    --border-radius: 15px;
+    --border-weight: 4px;
+
+}
+
+
+/* media query screen sizes */
+@custom-media --sm (min-width: 576px);
+@custom-media --md (min-width: 768px);
+@custom-media --lg (min-width: 992px);
+@custom-media --xl (min-width: 1200px);
+@custom-media --2xl (min-width: 1400px);
+
+/* ? fine tuned breakpoints */
+@custom-media --between-sm-and-md (--sm) and (max-width: 768px);
+@custom-media --between-md-and-lg (--md) and (max-width: 992px);
+@custom-media --between-lg-and-xl (--lg) and (max-width: 1200px);
+@custom-media --between-xl-and-2xl (--xl) and (max-width: 1400px);

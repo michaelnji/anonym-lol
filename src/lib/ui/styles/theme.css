@@ -1,17 +1,63 @@
 [data-theme='light'] {
     --tertiary: var(--tertiary-600);
-    --bg: var(--base-50);
-    --text: var(--text-950);
+    --tertiary-light: var(--tertiary-100);
+        --tertiary-lighter: var(--tertiary-50);
+        --tertiary-dark: var(--tertiary-800);
+        --tertiary-darker: var(--tertiary-900);
+        --tertiary-content: var(--tertiary-950);
     --primary: var(--primary-500);
+    --primary-light: var(--primary-100);
+        --primary-lighter: var(--primary-50);
+        --primary-dark: var(--primary-800);
+        --primary-darker: var(--primary-900);
+        --primary-content: var(--primary-50);
     --accent: var(--accent-400);
+    --accent-light: var(--accent-100);
+        --accent-lighter: var(--accent-50);
+        --accent-dark: var(--accent-800);
+        --accent-darker: var(--accent-900);
+        --accent-content: var(--accent-950);
     --secondary: var(--secondary-400);
+    --secondary-light: var(--secondary-100);
+        --secondary-lighter: var(--secondary-50);
+        --secondary-dark: var(--secondary-800);
+        --secondary-darker: var(--secondary-900);
+        --secondary-content: var(--secondary-950);
+        --base-50: var(--gray-50);
+        --base-100: var(--gray-100);
+        --base-200: var(--gray-200);
+        --base-300: var(--gray-300);
+        --base-content: #00172e;
 }
 
 [data-theme='dark'] {
     --tertiary: var(--tertiary-600);
-    --bg: var(--text-950);
-    --text: var(--text-50);
+    --tertiary-light: var(--tertiary-100);
+        --tertiary-lighter: var(--tertiary-50);
+        --tertiary-dark: var(--tertiary-800);
+        --tertiary-darker: var(--tertiary-900);
+        --tertiary-content: var(--tertiary-950);
     --primary: var(--primary-500);
+    --primary-light: var(--primary-100);
+        --primary-lighter: var(--primary-50);
+        --primary-dark: var(--primary-800);
+        --primary-darker: var(--primary-900);
+        --primary-content: var(--primary-50);
     --accent: var(--accent-400);
+    --accent-light: var(--accent-100);
+        --accent-lighter: var(--accent-50);
+        --accent-dark: var(--accent-800);
+        --accent-darker: var(--accent-900);
+        --accent-content: var(--accent-950);
     --secondary: var(--secondary-400);
+    --secondary-light: var(--secondary-100);
+        --secondary-lighter: var(--secondary-50);
+        --secondary-dark: var(--secondary-800);
+        --secondary-darker: var(--secondary-900);
+        --secondary-content: var(--secondary-950);
+        --base-50: #212529;
+        --base-100: #343a40;
+        --base-200: #495057;
+        --base-300: #868e96;
+        --base-content: var(--marshland-50);
 }

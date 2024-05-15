@@ -1,0 +1,25 @@
+.badge {
+    --color: var(--base-content);
+    --bg: var(--base-100);
+    background: var(--bg);
+    color: var(--color) !important;
+    padding: 2px 13px;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size);
+    border-radius: 999px;
+    font-weight: inherit;
+    transition: background var(--duration) var(--easing), color var(--duration) var(--easing);
+
+
+}
+
+*:hover>.badge.badge-hover {
+    color: var(--bg) !important;
+    background: var(--color);
+}
+
+.badge.badge-primary {
+    --color: var(--primary);
+    --bg: var(--primary-lighter);
+}

@@ -1,10 +1,12 @@
+<script>
+    import Sidebar from "$lib/ui/components/sidebar.svelte";
 
-<h1>How to outsmart a billionaire fox</h1>
+</script>
+
+<div class="">
+    <Sidebar/>
+</div>
 
 <style scoped>
     @import url('./page.css');
-
-    h1{
-        font-size: 5rem;
-    }
 </style>

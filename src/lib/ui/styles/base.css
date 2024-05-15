@@ -20,8 +20,8 @@ html [data-theme=dark] {
 
 body [data-theme] {
     min-height: 100vh;
-    color: var(--text);
-    background-color: var(--bg);
+    color: var(--base-content);
+        background-color: var(--base-100);
     transition:
         color var(--duration),
         background-color var(--duration);
@@ -30,7 +30,7 @@ body [data-theme] {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
+    
     a {
         text-decoration: none;
     }

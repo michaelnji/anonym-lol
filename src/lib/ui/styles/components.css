@@ -17,7 +17,8 @@
 }
 
 [data-theme='dark'] .badge {
-    --bg: var(--base-100)
+    --bg: var(--base-content);
+        --color: var(--base-100)
 }
 *:hover>.badge.badge-hover {
     color: var(--bg) !important;

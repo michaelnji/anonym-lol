@@ -16,9 +16,6 @@
     <div class="profile-body">
         <div class="profile-link">
             <p>anonym.lol/cyphora112</p>
-            <button class="btn btn-sm btn-outline">
-                <i class="bx bx-copy-alt"></i></button
-            >
         </div>
     </div>
     <div class="share-container">
@@ -126,7 +123,6 @@
                     width: fit-content;
                     padding-top: 10px;
                     gap: 10px;
-                    
                 }
                 @media (max-width: 340px) {
                     flex-direction: column;
@@ -147,7 +143,7 @@
                 display: flex;
                 padding: 1rem 0;
                 align-items: center;
-gap: 1rem;
+                gap: 1rem;
                 @media (max-width: 992px) {
                     flex-direction: column;
                     .share-card {
@@ -155,24 +151,42 @@ gap: 1rem;
                     }
                 }
 
-                
                 .share-card {
+                    --border-color:#000;
                     border-radius: var(--border-radius);
-
+                    border: 6px solid var(--border-color);
+                    box-shadow: var(--border-color) 8px 5px ;
                     padding: 1rem;
+                    position: relative;
+                    cursor: pointer;
+                     transition: transform var(--duration) var(--easing);
                     h4 {
                         line-height: 2.22rem;
-                        margin: 1rem 0 10px 0;
+                        margin: 1rem 0 5px 0;
                     }
                     p {
                         font-size: var(--fs-xs);
                     }
+
+                    &:active{
+                        box-shadow: var(--border-color) -0px -0px ;
+                        top: 5px;
+        left: 5px;
+                    }
+                   @media (min-width:1024px) {
+                     &:hover{
+                        transform: translateY(-6px);
+                    }
+                   }
                 }
                 .share-card:nth-of-type(1) {
+                    --border-color:var(--primary-dark);
                     background: var(--primary);
                     color: var(--primary-content);
                 }
                 .share-card:nth-of-type(2) {
+                    --border-color:var(--secondary-dark);
+
                     background: var(--secondary);
                     color: var(--secondary-content);
                 }

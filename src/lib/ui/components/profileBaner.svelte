@@ -125,7 +125,7 @@
 
                     width: fit-content;
                     padding-top: 10px;
-                    gap: 10px 0;
+                    gap: 10px;
                     
                 }
                 @media (max-width: 340px) {
@@ -147,7 +147,7 @@
                 display: flex;
                 padding: 1rem 0;
                 align-items: center;
-
+gap: 1rem;
                 @media (max-width: 992px) {
                     flex-direction: column;
                     .share-card {
@@ -155,7 +155,7 @@
                     }
                 }
 
-                gap: 1rem;
+                
                 .share-card {
                     border-radius: var(--border-radius);
 

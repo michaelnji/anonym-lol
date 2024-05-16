@@ -23,3 +23,6 @@ h4 {
         font-family: var(--family-head);
         font-weight: 900;
 }
+b {
+    font-weight: 600;
+}

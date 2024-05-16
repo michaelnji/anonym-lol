@@ -8,14 +8,14 @@
         </div>
         <div class="profile-info">
             <h3 class="name font-md">Cyphora</h3>
-            <span class="badge status">
+            <span class="badge badge-primary font-bold status">
                 <i class="bx bx-crown"></i>Pro member</span
             >
         </div>
     </div>
     <div class="profile-body">
         <div class="profile-link">
-            <p>anonym.lol/cyphora112</p>
+            <p>anonym.lol/<b>cyp0r15</b></p>
         </div>
     </div>
     <div class="share-container">
@@ -99,24 +99,13 @@
                 max-width: 100%;
                 align-items: center;
 
-                p {
-                    display: flex;
-                    flex-direction: column;
-
-                    gap: 2px 0;
-                    span {
-                        font-size: 15px;
-                        opacity: 0.8;
-                        color: var(--primary);
-                    }
-                }
+               
 
                 @media (max-width: 576px) {
                     margin: 0 auto;
                     padding: 0;
                     font-size: var(--fs-xs);
-                    p,
-                    span {
+                    p{
                         text-align: center;
                     }
 

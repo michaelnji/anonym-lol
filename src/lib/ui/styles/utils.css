@@ -9,6 +9,7 @@
     width: 1px;
     white-space: nowrap;
 }
+
 .font-bold {
     font-weight: 700 !important;
 }
@@ -29,4 +30,9 @@
     font-size: var(--fs-md);
 }
 
-/* .share-card:nth-of-type(1) */
+.hidden-mobile {
+    @media (max-width:576px) {
+        display: none !important;
+
+    }
+}

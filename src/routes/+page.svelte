@@ -1,5 +1,6 @@
 <script>
-    import ProfileBaner from "$lib/ui/components/profileBaner.svelte";
+    import MessageCountBanner from "$lib/ui/components/messageCountBanner.svelte";
+import ProfileBanner from "$lib/ui/components/profileBanner.svelte";
 import Sidebar from "$lib/ui/components/sidebar.svelte";
 
 </script>
@@ -7,7 +8,8 @@ import Sidebar from "$lib/ui/components/sidebar.svelte";
 <div class="container">
     <Sidebar/>
     <main>
-       <ProfileBaner/>
+       <ProfileBanner/>
+       <MessageCountBanner/>
     </main>
 </div>
 

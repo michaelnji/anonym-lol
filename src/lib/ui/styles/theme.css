@@ -4,7 +4,7 @@
         --tertiary-lighter: var(--tertiary-50);
         --tertiary-dark: var(--tertiary-800);
         --tertiary-darker: var(--tertiary-900);
-        --tertiary-content: var(--tertiary-950);
+        --tertiary-content: var(--tertiary-100);
     --primary: var(--primary-500);
     --primary-light: var(--primary-100);
         --primary-lighter: var(--primary-50);
@@ -37,7 +37,7 @@
         --tertiary-lighter: var(--tertiary-50);
         --tertiary-dark: var(--tertiary-800);
         --tertiary-darker: var(--tertiary-900);
-        --tertiary-content: var(--tertiary-950);
+        --tertiary-content: var(--tertiary-100);
     --primary: var(--primary-500);
     --primary-light: var(--primary-100);
         --primary-lighter: var(--primary-50);

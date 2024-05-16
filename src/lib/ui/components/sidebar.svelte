@@ -53,12 +53,17 @@
 <style scoped>
 @custom-media --smaller-than-sm (max-width: 576px);
 @custom-media --lg (max-width: 992px);
+@custom-media --md (max-width: 768px);
 
     .sidebar-container {
         border-bottom-right-radius: 2rem;
         border-top-right-radius: 2rem;
-        width: 17rem;
-
+        width: 100%;
+        max-width: 21rem;
+        /* position: fixed ;
+        top: 0;
+        left: 0;
+        bottom: 0; */
         padding: 1rem 1rem 2rem 1rem;
         background: var(--base-50);
         height: 100lvh;
@@ -68,6 +73,10 @@
 
        @media (--lg) {
             overflow-y: scroll;
+        }
+       @media (--md) {
+            transform: translateX(-500px);
+            display: none;
         }
 
 

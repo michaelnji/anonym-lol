@@ -9,3 +9,24 @@
     width: 1px;
     white-space: nowrap;
 }
+.font-bold {
+    font-weight: 700 !important;
+}
+
+.font-sm {
+    font-size: var(--fs-sm);
+}
+
+.font-base {
+    font-size: var(--fs-base);
+}
+
+.font-lg {
+    font-size: var(--fs-lg);
+}
+
+.font-md {
+    font-size: var(--fs-md);
+}
+
+/* .share-card:nth-of-type(1) */

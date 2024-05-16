@@ -1,19 +1,24 @@
 .badge {
     --color: var(--base-content);
-    --bg: var(--base-100);
+    --bg: var(--base-200);
     background: var(--bg);
     color: var(--color) !important;
     padding: 2px 13px;
     display: flex;
+    gap: 5px;
     align-items: center;
-    font-size: var(--font-size);
+    font-size: clamp(14px, 3vw, 15px);
     border-radius: 999px;
     font-weight: inherit;
     transition: background var(--duration) var(--easing), color var(--duration) var(--easing);
+    width: fit-content;
 
 
 }
 
+[data-theme='dark'] .badge {
+    --bg: var(--base-100)
+}
 *:hover>.badge.badge-hover {
     color: var(--bg) !important;
     background: var(--color);
@@ -21,5 +26,128 @@
 
 .badge.badge-primary {
     --color: var(--primary);
-    --bg: var(--primary-lighter);
+    --bg: var(--primary-light);
+    }
+    
+    .badge.badge-secondary {
+        --color: var(--secondary);
+        --bg: var(--secondary-light);
+    }
+    
+    .badge.badge-tertiary {
+        --color: var(--tertiary);
+        --bg: var(--tertiary-light);
+    }
+    
+    .badge.badge-accent {
+        --color: var(--accent);
+        --bg: var(--accent-light);
+    }
+    
+    .btn {
+        --size: var(--font-size);
+        --color: var(--base-50);
+        --bg: var(--base-content);
+        --btn-shadow: var(--shadow);
+        --padding: 10px 20px;
+        border-radius: var(--border-radius);
+        font-family: var(--family-body);
+        font-size: var(--size);
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--color);
+        padding: var(--padding);
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        appearance: none;
+        background: var(--bg);
+        /* border: 2px solid ; */
+        line-height: normal;
+        outline: none;
+        text-decoration: none;
+        transition: all var(--duration) var(--easing);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        will-change: transform;
+    }
+    
+    .btn:disabled {
+        pointer-events: none;
+    }
+    
+    .btn:hover {
+        box-shadow: var(--btn-shadow) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+    
+    .btn:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+    
+    .btn-sm {
+        --padding: 5px 15px;
+        --font-size: 16px;
+    }
+    
+    .btn-xs {
+        --padding: 5px 10px;
+        --font-size: 12px;
+    }
+    
+    .btn-3d {
+        --color: var(--base-content);
+        --bg: transparent;
+        --padding: 0;
+        border: 3px solid;
+        border-radius: 0;
+        padding: 0.25em 0.5em;
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px var(--color);
+    
+        &:hover {
+            box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px var(--color);
+        }
+    
+    
+    
+    }
+    
+    .btn-3d:active {
+        box-shadow: 0px 0px 0px 0px;
+        top: 5px;
+        left: 5px;
+    }
+    
+    @media (min-width: 768px) {
+        .btn-3d {
+            padding: 0.25em 0.75em;
+        }
+    }
+    
+    
+    /* CSS */
+    .btn-outline {
+    
+        --bg: transparent;
+        --color: var(--base-content);
+        --border: var(--base-content);
+        border: 1.5px solid var(--border);
+    }
+    
+    
+    
+    .btn-outline:hover {
+        --color: var(--base-50);
+        --bg: var(--base-content);
+        box-shadow: var(--shadow) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+    
+    .btn-outline:active {
+        box-shadow: none;
+        transform: translateY(0);
 }

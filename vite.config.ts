@@ -12,10 +12,8 @@ export default defineConfig({
 			targets: browserslistToTargets(browserslist(">= 0.25%")),
 			drafts: {
 				customMedia: true,
+			},
 
-
-
-			}
 		},
 	},
 	build: {

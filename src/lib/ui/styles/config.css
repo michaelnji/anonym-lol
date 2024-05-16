@@ -8,15 +8,51 @@
     /* transtions */
     --duration: 0.3s;
     --duration-longer: 0.8s;
-        --easing: cubic-bezier(0.39, 0.575, 0.565, 1);
+        --easing: cubic-bezier(.23, 1, 0.32, 1);
         /* transition-timing-function: ; */
 
     /* misc */
-    --border-radius: 15px;
+    --border-radius: 20px;
     --border-weight: 4px;
 
 }
+/* For browsers that support clamp  */
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+    :root {
+        --fs-sm: clamp(1.13rem, 0.09vi + 1.11rem, 1.19rem);
+        --fs-base: clamp(1.41rem, 0.26vi + 1.36rem, 1.58rem);
+        --fs-md: clamp(1.76rem, 0.51vi + 1.66rem, 2.11rem);
+        --fs-lg: clamp(2.2rem, 0.9vi + 2.03rem, 2.81rem);
+        --fs-xl: clamp(2.75rem, 1.46vi + 2.47rem, 3.75rem);
+        --fs-xxl: clamp(3.43rem, 2.28vi + 3.01rem, 5rem);
+        --fs-xxxl: clamp(4.29rem, 3.45vi + 3.65rem, 6.66rem);
+    }
+}
 
+/* For browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vi, 1rem)) {
+    :root {
+        --fs-sm: 1.13rem;
+        --fs-base: 1.41rem;
+        --fs-md: 1.76rem;
+        --fs-lg: 2.2rem;
+        --fs-xl: 2.75rem;
+        --fs-xxl: 3.43rem;
+        --fs-xxxl: 4.29rem;
+    }
+
+    @media screen and (min-width: 1400px) {
+        :root {
+            --fs-sm: 1.19rem;
+            --fs-base: 1.58rem;
+            --fs-md: 2.11rem;
+            --fs-lg: 2.81rem;
+            --fs-xl: 3.75rem;
+            --fs-xxl: 5rem;
+            --fs-xxxl: 6.66rem;
+        }
+    }
+}
 
 /* media query screen sizes */
 @custom-media --sm (min-width: 576px);
@@ -28,6 +64,7 @@
 /* ? fine tuned breakpoints */
 @custom-media --smaller-than-sm (max-width: 576px);
 @custom-media --between-sm-and-md (--sm) and (max-width: 768px);
+@custom-media --between-sm-and-lg (--sm) and (max-width: 992px);
 @custom-media --between-md-and-lg (--md) and (max-width: 992px);
 @custom-media --between-lg-and-xl (--lg) and (max-width: 1200px);
 @custom-media --between-xl-and-2xl (--xl) and (max-width: 1400px);

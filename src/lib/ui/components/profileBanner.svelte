@@ -71,6 +71,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+
                 .profile-info {
                     display: flex;
                     flex-direction: column;
@@ -86,6 +87,7 @@
         }
         .profile-body {
             margin-top: 2rem;
+
             .profile-link {
                 color: var(--base-content);
                 line-clamp: 1 !important;
@@ -105,6 +107,7 @@
                     margin: 0 auto;
                     padding: 0;
                     font-size: var(--fs-xs);
+
                     p{
                         text-align: center;
                     }
@@ -113,11 +116,13 @@
                     padding-top: 10px;
                     gap: 10px;
                 }
+
                 @media (max-width: 340px) {
                     flex-direction: column;
                     align-items: center;
                 }
             }
+
             @media (max-width: 576px) {
                 margin-top: 10px;
             }
@@ -125,15 +130,18 @@
         .share-container {
             margin-top: 2rem;
             margin-bottom: 1rem;
+
             .share-heading {
                 font-size: var(--fs-sm);
             }
+
             & > div {
                 display: flex;
                 padding: 1rem 0;
                 align-items: center;
                 gap: 1rem;
                 @media (max-width: 992px) {
+                    
                     flex-direction: column;
                     .share-card {
                         width: 100%;

@@ -14,7 +14,7 @@
     background: var(--base-50);
     max-width: 45rem;
     width: 100%;
-    margin: clamp(2rem,2vw,3rem) auto 0 auto;
+    margin: clamp(1rem,2vw,3rem) auto 0 auto;
     height: fit-content;
     max-height: 30rem;
     display: flex;

@@ -7,7 +7,7 @@
         <div class="stat stat-emoji">
             <div class="icon"><i class="bx bxs-heart bx-lg"></i></div>
             <div>
-                <div class="title">3.2K</div>
+                <div class="title">32</div>
                 <div class="description">Emojis</div>
             </div>
         </div>
@@ -17,7 +17,7 @@
                 <i class="bx bxs-message-rounded-detail bx-lg"></i>
             </div>
             <div>
-                <div class="title">30.2K</div>
+                <div class="title">657</div>
                 <div class="description">Messages</div>
             </div>
         </div>
@@ -25,7 +25,7 @@
         <div class="stat stat-popularity">
             <div class="icon"><i class="bx bxs-star bx-lg"></i></div>
             <div>
-                <div class="title">9%</div>
+                <div class="title">79%</div>
                 <div class="description">Popularity</div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                 --color-alt: var(--base-50);
                 --border: var(--base-300);
                 border-radius: var(--border-radius);
-                border: 6px solid var(--border);
+                /* border: 6px solid var(--border); */
                 padding: 20px;
                 background: var(--bg);
                 color: var(--color-alt);

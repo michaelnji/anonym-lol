@@ -75,7 +75,14 @@
         touch-action: manipulation;
         will-change: transform;
     }
-    
+
+                                .btn-icon {
+                                    --padding: 8px 8px;
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                
+                                }
     .btn:disabled {
         pointer-events: none;
     }

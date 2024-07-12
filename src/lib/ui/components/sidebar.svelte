@@ -50,6 +50,7 @@
     </div>
 </div>
 
+
 <style scoped>
 @custom-media --smaller-than-sm (max-width: 576px);
 @custom-media --lg (max-width: 992px);
@@ -58,12 +59,13 @@
     .sidebar-container {
         border-bottom-right-radius: 2rem;
         border-top-right-radius: 2rem;
-        width: 100%;
+        
+        width: fit-content;
         max-width: 21rem;
-        /* position: fixed ;
+        position: fixed ;
         top: 0;
         left: 0;
-        bottom: 0; */
+        bottom: 0;
         padding: 1rem 1rem 2rem 1rem;
         background: var(--base-50);
         height: 100lvh;
@@ -74,7 +76,7 @@
        @media (--lg) {
             overflow-y: scroll;
         }
-       @media (--md) {
+       @media (max-width:819px) {
             transform: translateX(-500px);
             display: none;
         }
@@ -163,5 +165,36 @@ margin: 2rem 0;
                 }
             }
         }
+    }
+    .navbar-container{
+        width: 100%;
+        padding: 2rem 1rem 1rem 1rem;
+        background: var(--base-50);
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo p {
+              
+                font-weight: 800;
+                /* color: var(--primary); */
+                font-size: var(--fs-base);
+                font-family: var(--family-head);
+                display: flex;
+                gap: 0 0.5rem;
+                align-items: center;
+                position: relative;
+
+ 
+                i{
+                    position: absolute;
+                    color: var(--primary);
+                    top: -1rem;
+                    left: -10px;
+                    transform: rotate(-30deg);
+                }
+            }
+
     }
 </style>

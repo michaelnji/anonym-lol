@@ -53,8 +53,8 @@
         }
 
         .profile-img {
-            height: clamp(4rem, 5vw, 5rem);
-            width: clamp(4rem, 5vw, 5rem);
+            height: clamp(5rem, 5vw, 5.5rem);
+            width: clamp(5rem, 5vw, 5.5rem);
             overflow: hidden;
             border-radius: 9999px;
             background: var(--primary);
@@ -101,14 +101,12 @@
                 max-width: 100%;
                 align-items: center;
 
-               
-
                 @media (max-width: 576px) {
                     margin: 0 auto;
                     padding: 0;
                     font-size: var(--fs-xs);
 
-                    p{
+                    p {
                         text-align: center;
                     }
 
@@ -141,7 +139,6 @@
                 align-items: center;
                 gap: 1rem;
                 @media (max-width: 992px) {
-                    
                     flex-direction: column;
                     .share-card {
                         width: 100%;
@@ -149,14 +146,18 @@
                 }
 
                 .share-card {
-                    --border-color:#000;
+                    --border-color: #000;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    appearance: none;
                     border-radius: var(--border-radius);
                     border: 6px solid var(--border-color);
-                    box-shadow: var(--border-color) 8px 5px ;
+                    box-shadow: var(--border-color) 8px 5px;
                     padding: 1rem;
                     position: relative;
                     cursor: pointer;
-                     transition: transform var(--duration) var(--easing);
+                    transition: transform var(--duration) var(--easing);
                     h4 {
                         line-height: 2.22rem;
                         margin: 1rem 0 5px 0;
@@ -165,24 +166,24 @@
                         font-size: var(--fs-xs);
                     }
 
-                    &:active{
-                        box-shadow: var(--border-color) -0px -0px ;
+                    &:active {
+                        box-shadow: var(--border-color) -0px -0px;
                         top: 5px;
-        left: 5px;
+                        left: 5px;
                     }
-                   @media (min-width:1024px) {
-                     &:hover{
-                        transform: translateY(-6px);
+                    @media (min-width: 1024px) {
+                        &:hover {
+                            transform: translateY(-6px);
+                        }
                     }
-                   }
                 }
                 .share-card:nth-of-type(1) {
-                    --border-color:var(--primary-dark);
+                    --border-color: var(--primary-dark);
                     background: var(--primary);
                     color: var(--primary-content);
                 }
                 .share-card:nth-of-type(2) {
-                    --border-color:var(--secondary-dark);
+                    --border-color: var(--secondary-dark);
 
                     background: var(--secondary);
                     color: var(--secondary-content);
